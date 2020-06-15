@@ -1,0 +1,16 @@
+
+.skill {
+    background: url(../img/all_shields.png) 0 0 no-repeat;
+    min-width: 900px;
+    min-height: 285px;
+}
+#x-ray {
+    background: url(../img/all_codes.png) 0 0 no-repeat;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    margin-left: 8px;
+    margin-top: 63px;
+}
+

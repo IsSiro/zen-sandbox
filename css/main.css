@@ -1,0 +1,103 @@
+* {
+    background: #c9c9c9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 300px;
+}
+
+.button {
+    background: #c9c9c9;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #c9c9c9;
+    box-shadow: inset 4px 4px 4px 0px rgba(0, 0, 0, 0.26),
+                inset -4px -4px 4px 0px rgba(255, 255, 255, 0.26);
+    width: 100px;
+    height: 100px;
+}
+
+.button:hover {
+box-shadow: inset 6px 6px 4px 0px rgba(0, 0, 0, 0.26),
+            inset -6px -6px 4px 0px rgba(255, 255, 255, 0.26);
+}
+
+.mudsarulopas {
+    width: 320px;
+    position: fixed;
+    padding: 0;
+    top: 49.7%;
+    margin-top: -99.7px;
+    left: 0;
+    background: #2b99bb;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 0.34s;
+    -moz-transition: 0.34s;
+    transition: 0.34s;
+    z-index: 9998;
+}
+.mudsarulopas:hover {background: #3c8eaf;}
+.mudsarulopas > section {
+  padding: 15px;
+  color: #f5f5f5 
+}
+.asruk-tkilasun {
+    position: absolute;
+    left: 99.8%;
+    top: 41%;
+    margin-top: -24px;
+    left: -24px;
+    padding: 1em 0;
+    background: inherit;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    color: #f7f3f1;
+    font-size: 1.4em;
+    line-height: 1;
+    text-align: center;
+}
+.asruk-tkilasun:after {
+  content: '\f003';
+  font: normal 18px/1 'FontAwesome';
+  text-decoration: inherit;
+}
+.asruk-tkilasun:hover{
+  cursor: pointer;
+  color:#fff;
+}
+
+[id='asruk-tkilasun'] {
+  position: absolute;
+  right:0;
+  display:none;
+}
+
+[id='asruk-tkilasun']:checked ~ .mudsarulopas {
+   -webkit-transform: translateX(0);
+   -moz-transform: translateX(0);
+   transform: translateX(0);
+}
+
+[id='asruk-tkilasun']:checked ~ .mudsarulopas > .asruk-tkilasun:after {
+  content:'\f2b7';
+  font: normal 18px/1 'FontAwesome';
+}
+body { 
+  -webkit-animation: bugfix infinite 1s;
+  animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix { 
+  to { padding: 0; } 
+}
+
+@media (max-width: 350px) {
+  .mudsarulopas {
+    width: 100%;
+  }
+}  

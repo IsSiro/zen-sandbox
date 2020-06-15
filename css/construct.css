@@ -1,0 +1,90 @@
+body,html {
+	font-family: 'Jura', sans-serif;;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-size: 25px;
+	background-color: #44657a;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ }
+
+
+.header {
+	background-image: url('../img/michael-oeser-ZdrqJmrXwS4-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-origin: border-box;
+	height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    width: 15%;
+    left: 20px;
+    text-align: center;
+}
+
+.timer {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fab,
+.fas {
+	color: #fff;
+	margin-left: 20px;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+
+	.container {
+		width: 540px;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+}
